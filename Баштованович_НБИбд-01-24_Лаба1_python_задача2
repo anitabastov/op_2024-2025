@@ -1,0 +1,9 @@
+import math
+
+a = float(input("Введите сторону треугольника a: "))
+pl = (math.sqrt(3) / 4) * a ** 2
+Rv = a / (2 * math.sqrt(3))
+Ro = a / math.sqrt(3)
+print(f"Площадь: {pl:.2f}")
+print(f"Радиус вписанной окружности: {Rv:.2f}")
+print(f"Радиус описанной окружности: {Ro:.2f}")
