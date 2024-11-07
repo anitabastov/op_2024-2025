@@ -1,15 +1,14 @@
 #include <stdio.h> 
 #include <math.h> 
- 
+
 int main() { 
-    double a, pl, Rv, Ro; 
-    printf("Введите сторону треугольника a: "); 
-    scanf("%lf", &a); 
-    pl = (sqrt(3) / 4) * a * a; 
-    Rv = a / (2 * sqrt(3)); 
-    Ro = a / sqrt(3); 
-    printf("Площадь: %.2lf\n", pl); 
-    printf("Радиус вписанной окружности: %.2lf\n", Rv); 
-    printf("Радиус описанной окружности: %.2lf\n", Ro); 
-    return 0;
+    double a, b, h, pl; 
+    printf("Введите основания a и b: "); 
+    scanf("%lf %lf", &a, &b); 
+    printf("Введите высоту h: "); 
+    scanf("%lf", &h);  
+    pl = 0.5 * (a + b) * h; 
+    printf("Площадь трапеции: %.2lf\n", pl); 
+ 
+    return 0; 
 }
