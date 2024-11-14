@@ -1,0 +1,8 @@
+import math
+x1,y1,r1 = map(float,input("Введите параметры окружности номер один:").split())
+x2,y2,r2 = map(float, input("Введите параметры окружности номер два:").split())
+p = math.sqrt((x2-x1) * 2 + (y2-y1) * 2)
+if p == r1 + r2 or p == abs(r1 - r2):
+    print("Окружности касаются")
+else:
+    print("Окружности не касаются")
