@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+     int a, b, c, d;
+     
+     printf("Введите значения для первого числа:");
+     scanf("%d", &a);
+     printf("Введите значения для второго числа:");
+     scanf("%d", &b);
+     printf("Введите значения для третьего числа:");
+     scanf("%d", &c);
+     printf("Введите значения для четвертого числа:");
+     scanf("%d", &d);
+     
+     int razba = b - a;
+     int razcb = c - b;
+     int razdc = d - c;
+     
+     if (razba ==razcb && razcb == razdc) {
+          printf("Образуется арифметическая прогрессия.\n"); 
+    } else {
+        printf("Не образуется арифметическая прогрессия.\n"); 
+    }
+    return 0;
+}
