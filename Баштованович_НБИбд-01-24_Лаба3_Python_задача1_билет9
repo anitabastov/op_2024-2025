@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() 
+{
+    int voz;
+
+    printf("Введите возраст человека:");
+    scanf("%d", &voz);
+
+    if (voz < 0) {
+        printf("Возраст не может быть отриц.\n");
+    } else if (voz < 18) {
+        printf("Группа - детство и юность\n");
+    } else if (voz <= 60) {
+        printf("Группа - зрелость\n");
+    } else if (voz > 60) {
+        printf("Группа - пожилой возраст\n");
+    }
+
+    return 0;
+}
