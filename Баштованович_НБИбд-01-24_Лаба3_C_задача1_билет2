@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int mai() {
+    int nomer_mes;
+    
+    printf("Введите номер месяца:");
+    scanf("%d", &nomer_mes);
+    
+    if (nomer_mes < 1 or nomer_mes > 12) {
+        printf("Нет такого месяца\n");
+        return 1;
+    }
+    if (nomer_mes >= 3 and nomer_mes <= 5) {
+        printf("Весна\n");
+    } else if (nomer_mes >= 6 and nomer_mes <= 8) {
+        printf("Лето\n");
+    } else if (nomer_mes >= 9 and nomer_mes <= 11) {
+        printf("Осень\n");
+    } else {
+        printf("Зима\n");
+    }
+    return 0
+}
