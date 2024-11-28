@@ -1,0 +1,15 @@
+nomer_mes = int(input("Введите номер месяца:"))
+
+if (nomer_mes < 1) or (nomer_mes > 12):
+    print ("Нет такого месяца")
+else:
+    if (nomer_mes>=3) and (nomer_mes<=5):
+        print ("Весна")
+    else:
+        if (nomer_mes >= 6) and (nomer_mes <= 8):
+            print("Лето")
+        else:
+            if (nomer_mes >= 9) and (nomer_mes <= 11):
+                print("Осень")
+            else:
+                print("Зима")
