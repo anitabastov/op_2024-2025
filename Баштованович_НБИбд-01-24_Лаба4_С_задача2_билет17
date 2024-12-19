@@ -1,0 +1,26 @@
+#include <iostream>
+#include <algorithm> 
+
+using namespace std;
+
+int main() {
+    int t, n;
+
+    
+    cout << "Введите числитель (t): ";
+    cin >> t;
+    cout << "Введите знаменатель (n): ";
+    cin >> n;
+
+    
+    int gcd = __gcd(t, n); 
+
+    
+    int t_reduced = t / gcd;
+    int n_reduced = n / gcd;
+
+    
+    cout << "Сокращенная дробь: " << t_reduced << "/" << n_reduced << endl;
+
+    return 0;
+}
