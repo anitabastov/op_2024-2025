@@ -1,0 +1,17 @@
+n = int(input("Введите количество чисел: "))
+poloz = 0
+otric = 0
+nuli = 0
+
+for i in range(n):
+    num = int(input(f"Введите число {i + 1}: "))
+    if num > 0:
+        poloz += 1
+    elif num < 0:
+        otric += 1
+    else:
+        nuli += 1
+
+print("Количество положительных чисел:", poloz)
+print("Количество отрицательных чисел:", otric)
+print("Количество нулей:", nuli)
